@@ -1,0 +1,24 @@
+<div class="sprint-parent--container">
+  <div class="sprint-form--container">
+    <div class="sub-container">
+      <h3>sprint calculator</h3>
+      <input
+        type="number"
+        min="0"
+        
+        [(ngModel)]="sprintPoint"
+        name="sprint point"
+        placeholder="Sprint Point"
+      />
+
+      <button type="button" (click)="autoSelectStories()">
+        Auto Selected Stories
+      </button>
+      <button class="button-style" type="button" (click)="clearStories()" [disabled]="stories.length ==0">
+        Clear Stories
+      </button>
+      <button type="button" (click)="clearSprints()" [disabled]="selectedStories.length ==0">Clear Sprints</button>
+    </div>
+  </div>
+  <app-auto-selected-stories [autoSelectedStories]="selectedStories"></app-auto-selected-stories>
+</div>
