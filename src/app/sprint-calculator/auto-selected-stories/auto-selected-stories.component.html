@@ -1,0 +1,14 @@
+<div class="sprint-listing--container">
+  <h3>Auto Selected Sprints</h3>
+  <ul class="sprint-lists" *ngIf="autoSelectedStories.length > 0">
+    <li *ngFor="let story of autoSelectedStories">
+      <div class="sub-container">
+        <div class="name">Name:{{ story.name }}</div>
+        <div class="point">Point:{{ story.point }}</div>
+      </div>
+    </li>
+  </ul>
+  <h2 *ngIf="autoSelectedStories.length == 0">
+    No Auto selected sprints found
+  </h2>
+</div>
