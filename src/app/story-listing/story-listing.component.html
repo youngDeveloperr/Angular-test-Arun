@@ -1,0 +1,12 @@
+<div class="story-listing--container">
+  <h3>Stories and point Component</h3>
+  <ul class="story-lists" *ngIf="stories.length > 0">
+    <li *ngFor="let story of stories">
+      <div class="sub-container">
+        <div class="name">Name:{{ story.name }}</div>
+        <div class="point">Point:{{ story.point }}</div>
+      </div>
+    </li>
+  </ul>
+  <h3 *ngIf="stories.length == 0">No Stroies found!</h3>
+</div>

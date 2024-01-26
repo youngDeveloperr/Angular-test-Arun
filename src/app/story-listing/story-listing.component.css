@@ -1,0 +1,30 @@
+.story-listing--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: auto;
+  flex-direction: column;
+}
+.story-lists {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
+}
+
+.sub-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  flex-direction: column;
+  padding: 10px;
+}
+.name,
+.point {
+  font-weight: 600;
+}
