@@ -1,0 +1,25 @@
+<div class="story-form--container">
+  <form
+    class="sub-container"
+    [formGroup]="storyForm"
+    (ngSubmit)="createStories()"
+  >
+    <h3>Add Story Form</h3>
+    <input
+      type="text"
+      formControlName="name"
+      name="story name"
+      placeholder="Story Name"
+    />
+    <input
+      type="number"
+      min="0"
+      formControlName="point"
+      name="story point"
+      placeholder="Story Point"
+    />
+    <span class="text" *ngIf="storyForm.invalid&& isSubmitted">Enter values</span>
+    <span class="text" *ngIf="isDuplicate">Duplicate Story found!</span>
+    <button type="submit">ADD STORY</button>
+  </form>
+</div>

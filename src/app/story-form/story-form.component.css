@@ -1,0 +1,48 @@
+.story-form--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: auto;
+}
+
+.sub-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  border: 2px solid black;
+  flex-direction: column;
+  padding: 10px;
+  gap: 15px;
+}
+h3 {
+  margin: 0;
+}
+.text{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(191, 11, 11);
+}
+input,
+button {
+  width: 100%;
+  outline: none;
+  height: 42px;
+  font-weight: 400;
+  border: 1px solid black;
+}
+input{
+    padding: 5px;
+}
+button {
+  background-color: #000;
+  color: #fff;
+}
+button:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: 400;
+  cursor: pointer;
+}
